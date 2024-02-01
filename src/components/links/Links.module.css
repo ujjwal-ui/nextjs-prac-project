@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.container .link{ 
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.container button {
+    display: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 2px;
+}
+
+.container button img {
+    object-fit: fill;
+}
+
+.container button:hover {
+    border: 1px solid yellowgreen;
+}
+
+.active {
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+.mobileMenu button {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 773px) {
+    .container button {
+        display: block;
+        margin-left: auto;
+    }
+
+    .container .link, .active{ 
+        display: none;
+    }
+
+    .mobileMenu {
+        width: 40%;
+        height: 100vh;
+        background-color: aquamarine;
+        position: absolute;
+        right: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .mobileMenu .active {
+        display: block;
+    }
+}
