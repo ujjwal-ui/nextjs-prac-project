@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.container .imageArea, .descArea {
+    width: 100%;
+}
+
+.container .imageArea {
+    flex: 1;
+    height: 400px;
+}
+
+.container .imageArea img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.container .descArea {
+    height: 300px;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}

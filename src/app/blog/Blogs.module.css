@@ -1,0 +1,56 @@
+
+.container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   justify-content: center;
+   align-content: center;
+   margin-top: 40px;
+}
+
+.blog {
+  width: 17%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #eee;
+  color: gray;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.blog div {
+    width: 100%;
+    height: 100%;
+}
+
+.blog .imageArea img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1110px) {
+    .blog {
+        width: 30%;
+    }   
+}
+
+@media screen and (max-width: 755px) {
+    .blog {
+        width: 29%;
+    }   
+}
+
+@media screen and (max-width: 635px) {
+    .blog {
+        width: 40%;
+    }  
+}
+
+@media screen and (max-width: 518px) {
+    .blog {
+        width: 70%;
+    }
+}
